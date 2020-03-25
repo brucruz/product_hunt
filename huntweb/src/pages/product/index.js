@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import './styles.css';
@@ -20,13 +21,18 @@ export default class Product extends Component {
         const { product } = this.state;
         
         return (
-            <div className="product-info">
-                <h1>{product.title}</h1>
-                <p>{product.description}</p>
+            <div className="content">
+                <div className="return-home">
+                    <Link to='/'>Voltar ao Menu</ Link>
+                </div>
+                <div className="product-info">
+                    <h1>{product.title}</h1>
+                    <p>{product.description}</p>
 
-                <p>
-                    URL: <a href="{product.url}">{product.url}</a>
-                </p>
+                    <p>
+                        URL: <a href="{product.url}">{product.url}</a>
+                    </p>
+                </div>
             </div>
         )
     }

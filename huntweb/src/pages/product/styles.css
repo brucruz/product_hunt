@@ -1,6 +1,16 @@
-.product-info {
+.content {
     max-width: 700px;
     margin: 20px auto 0;
+}
+
+.return-home {
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+    padding: 10px;
+}
+
+.product-info {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
